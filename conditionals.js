@@ -8,24 +8,32 @@ console.log('Is 2 gelijk aan 2?', equalNumbers);
 // ==========================================
 // 1. Declareer een variabele en sla daar de uitkomst van de vergelijking "Is 10 groter dan 20?" in op        // geeft false wanneer gelogd
 // ==========================================
-
+const uitkomst = 10 > 20;
+console.log('Is 10 groter dan 20?', uitkomst);
 
 // ==========================================
 // 2. Declareer een variabele en sla daar de uitkomst van de vergelijking "Is 10 ongelijk aan 11?" in op        // geeft true wanneer gelogd
 // ==========================================
-
+const uitkomst2 = 10 !== 11;
+console.log("Is 10 ongelijk aan 11", uitkomst2)
 
 // ==========================================
 // 3. Declareer een variabele en sla daar in op of de woorden 'zoet' en 'sappig' hetzelfde zijn                // geeft false wanneer gelogd
 // ==========================================
-
+const uitkomst3 = "zoet" === "sappig";
+console.log("Is zoet gelijk aan sappig?", uitkomst3)
 
 // ==========================================
 // 4a. Declareer een variabele en sla daar het rapportcijfer 9 in op.
 // 4b. schrijf een script dat checkt of het rapportcijfer groter is dan 8.
 //     Als dat zo is, loggen we 'Cum laude!' in de console.                                                     // geeft 'Cum laude!' wanneer gelogd
 // ==========================================
+const grade = 9;
 
+if (grade > 8) {
+        console.log("Cum laude!");
+} else{
+    console.log("je hebt het niet gehaald")
 
 // ==========================================
 // 5a. Gebruik onderstaande variabelen isRaining en temperature;
@@ -34,5 +42,11 @@ console.log('Is 2 gelijk aan 2?', equalNumbers);
 // Tip: verander de waarde van isRaining en temperature even handmatig om te kijken of jouw 2e conditie klopt
 // ==========================================
 
-const isRaining = false;
-const temperature = 23;
+        const isRaining = false;
+        const temperature = 23;
+
+        if (temperature > 21) {
+            console.log("Je kunt een korte broek aan!");
+        }
+
+}
